@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /apollogix
+
+
+spring:
+  application:
+    name: "exams"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/exams_service"
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwt:
+    signer:
+      key: JpbhtR7f9obx6ibmpdO5/q5OZj28L/hloKbbQbdprvp/R8tD+Ad53Y52pc55l1js
+    expiration:
+      time: 3600000
+  default:
+    account: teacher@example.com
+
+
